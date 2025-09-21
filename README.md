@@ -1,5 +1,7 @@
 # Análise de Gorjetas em Restaurantes
 
+# Primeiro Projeto como um ML engineer
+
 ### Visão Geral do Projeto
 
 Este projeto de análise de dados exploratória busca entender e modelar os fatores que influenciam as gorjetas em um restaurante. Utilizando o dataset `tips` do Seaborn e ferramentas de Data Science, o objetivo é extrair insights e identificar as principais variáveis que contribuem para o valor da gorjeta.
