@@ -1,65 +1,53 @@
-# Primeiros-Passos-em-ML-An-lise-de-Dados-Tips
-Esse foi meu primeiro EDA , usei um dataset de um outro usuário do github... Explorando dados e aplicando regressão linear no dataset Tips (gorjetas em restaurante) – primeiro projeto prático de Machine Learning.
+# Análise de Gorjetas em Restaurantes
+
+### Visão Geral do Projeto
+
+Este projeto de análise de dados exploratória busca entender e modelar os fatores que influenciam as gorjetas em um restaurante. Utilizando o dataset `tips` do Seaborn e ferramentas de Data Science, o objetivo é extrair insights e identificar as principais variáveis que contribuem para o valor da gorjeta.
+
+---
+
+### Objetivos da Análise
+
+1.  **Exploração Estatística:** Analisar a distribuição e as estatísticas descritivas dos dados.
+2.  **Testes de Hipóteses:** Aplicar testes estatísticos (`t-test` e `qui-quadrado`) para avaliar a relação entre variáveis categóricas (como gênero, fumante, dia da semana).
+3.  **Modelagem Preditiva:** Utilizar a Regressão Linear para modelar a relação entre o valor da conta e a gorjeta.
+4.  **Visualização de Dados:** Criar gráficos claros e informativos para comunicar os resultados.
+
+---
+
+### Metodologia e Ferramentas
+
+O projeto foi desenvolvido em Python, utilizando as seguintes bibliotecas:
+
+* **`pandas`**: Para manipulação e análise dos dados.
+* **`seaborn` e `matplotlib`**: Para a criação de visualizações estatísticas.
+* **`scikit-learn`**: Para a construção do modelo de Regressão Linear.
+* **`scipy`**: Para a realização de testes estatísticos.
+
+---
+
+### Resultados e Conclusões
+
+#### **1. Relação entre o Valor da Conta e a Gorjeta**
+
+A análise de regressão linear revelou uma **relação positiva e linear** entre o valor da conta total e a gorjeta.
 
 
-Projeto: Estatística e Machine Learning - Dataset Tips
+* **Coeficiente de Inclinação (Slope):** `0.105` - Isso indica que, para cada dólar a mais na conta, a gorjeta aumenta em cerca de 10 centavos.
+* **Coeficiente de Determinação (R²):** `0.457` - Aproximadamente **45.7%** da variação nas gorjetas pode ser explicada pelo valor da conta, sugerindo que este é o principal fator de influência.
 
-Descrição
-Projeto de treino em estatística e Machine Learning simples, feito para praticar análise de dados e regressão linear usando Python. Ideal para iniciantes que querem entender como explorar dados, testar hipóteses e visualizar relações entre variáveis.
+#### **2. Outras Análises Exploratórias**
 
-Dataset
+Testes estatísticos adicionais (com o código comentado no script) foram usados para explorar outras relações:
 
-Tips Dataset
- (gorjetas em restaurante)
+* **Teste T de Student:** Analisou se há uma diferença significativa na gorjeta média entre homens e mulheres.
+* **Teste Qui-Quadrado:** Avaliou se há uma dependência entre o hábito de fumar e o período do dia (almoço ou jantar).
 
-Fonte: Seaborn
+---
 
-Objetivos do Projeto
+### Como Rodar o Projeto
 
-Explorar estatisticamente os dados.
+Para rodar este projeto, clone o repositório, instale as bibliotecas necessárias e execute o script Python.
 
-Aplicar teste qui-quadrado para verificar independência entre variáveis categóricas.
-
-Aplicar teste t para comparar médias entre grupos.
-
-Treinar e avaliar regressão linear (gorjeta ~ valor da conta).
-
-Visualizar relações entre variáveis usando histogramas e heatmaps.
-
-Principais Aprendizados
-
-Como carregar e manipular dados com pandas.
-
-Entender distribuição, correlação e relação entre variáveis.
-
-Aplicar estatística inferencial para testar hipóteses.
-
-Construir modelos simples de Machine Learning e interpretar resultados (coeficiente, intercepto, R²).
-
-Criar visualizações que facilitam análise e compreensão dos dados.
-
-Como Rodar o Projeto
-
-Clone este repositório:
-
-git clone [link do seu repo]
-
-
-Instale as dependências:
-
-pip install numpy pandas seaborn matplotlib scipy scikit-learn
-
-
-Rode o script main.py ou o notebook correspondente.
-
-Explore os gráficos e os resultados da regressão linear.
-
-(Opcional) Ative os testes estatísticos descomentando os blocos ou usando run_tests = True.
-
-Visualizações
-
-Distribuição de total_bill
-
-Heatmap de correlação
-
-Scatterplot com regressão linear (total_bill vs tip)
+```bash
+pip install pandas numpy seaborn scikit-learn scipy matplotlib
